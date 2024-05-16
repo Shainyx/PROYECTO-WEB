@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- Declaración de tipo de documento HTML -->
+<html lang="es"> <!-- Inicio del elemento HTML con especificación de idioma -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista para dispositivos móviles -->
+    <title>INICIO | UCV LINKEN</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+    <script src="script.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</head>
+
+<body>
+    <header> <!-- Encabezado de la página -->
+        <div id="fecha-hora"> <!-- Contenedor para mostrar la fecha y hora -->
+            <script>
+                setInterval(mostrarFechaHora,1000) <!-- Script para mostrar fecha y hora actualizada -->
+            </script>
+        </div>
+        <h1>UCV LINKEN: INICIO</h1>  <!-- Título principal -->
+        <img src="ucv_logo.png" alt="UCV Logo" width="100"> <!-- Imagen del logo de la universidad -->
+        <nav> <!-- Barra de navegación -->
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li> <!-- Enlace al inicio -->
+                <li><a href="historia.html">Historia</a></li> <!-- Enlace a la página de historia -->
+                <li><a href="programas.html">Programas Académicos</a></li> <!-- Enlace a la página de programas académicos -->
+                <li><a href="eventos.html">Eventos</a></li> <!-- Enlace a la página de eventos -->
+                <li><a href="testimonios.html">Testimonios</a></li> <!-- Enlace a la página de testimonios -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+            </ul>
+            <button class="login-button" onclick="location.href='login.html'">Iniciar Sesión</button> <!-- Botón para iniciar sesión -->
+        </nav>
+    </header>
+
+    <section class="registro-container"> <!-- Sección para el formulario de registro -->
+        <div class="registro-form"> <!-- Contenedor del formulario de registro -->
+            <h2>Registro</h2> <!-- Título del formulario -->
+            <form> <!-- Formulario de registro -->
+                <label for="nombre">Nombre:</label> <!-- Etiqueta y campo para el nombre -->
+                <input type="text" id="nombre" name="nombre" required><br><br> <!-- Campo de entrada para el nombre -->
+                <label for="email">Correo Electrónico:</label> <!-- Etiqueta y campo para el correo electrónico -->
+                <input type="email" id="email" name="email" required><br><br> <!-- Campo de entrada para el correo electrónico -->
+                <label for="password">Contraseña:</label> <!-- Etiqueta y campo para la contraseña -->
+                <input type="password" id="password" name="password" required><br><br> <!-- Campo de entrada para la contraseña -->
+                <button type="submit">Registrarse</button> <!-- Botón de envío del formulario -->
+            </form>
+        </div>
+        <div class="registro-image"> <!-- Contenedor de la imagen relacionada con el registro -->
+            <img src="ucv_estudiantes.jpg" alt="Imagen de registro"> <!-- Imagen relacionada con el registro -->
+        </div>
+    </section>
+
+    <footer> <!-- Pie de página -->
+        <p><a href="index.html">Regresar al Principio</a></p> <!-- Enlace para regresar al inicio -->
+        <p>Derechos de autor © 2024 Universidad César Vallejo. Todos los derechos reservados.</p> <!-- Derechos de autor -->
+    </footer>
+
+    <div style="height: 150px;"></div> <!-- Espacio en blanco -->  
+</body>
+</html>
