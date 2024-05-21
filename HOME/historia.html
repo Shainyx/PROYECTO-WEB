@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- Declaración de tipo de documento HTML -->
+<html lang="es"> <!-- Inicio del elemento HTML con especificación de idioma -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista para dispositivos móviles -->
+    <title>HISTORIA | UCV LINKEN</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+    <script src="script.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</head>
+
+<body>
+    <header> <!-- Encabezado de la página -->
+        <div id="fecha-hora"> <!-- Contenedor para mostrar la fecha y hora -->
+            <script>
+                setInterval(mostrarFechaHora,1000) <!-- Script para mostrar fecha y hora actualizada -->
+            </script>
+        </div>
+        <h1>UCV LINKEN: HISTORIA</h1>  <!-- Título principal -->
+        <img src="ucv_logo.png" alt="UCV Logo" width="100"> <!-- Imagen del logo de la universidad -->
+        <nav> <!-- Barra de navegación -->
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li> <!-- Enlace al inicio -->
+                <li><a href="historia.html">Historia</a></li> <!-- Enlace a la página de historia (actual) -->
+                <li><a href="programas.html">Programas Académicos</a></li> <!-- Enlace a la página de programas académicos -->
+                <li><a href="eventos.html">Eventos</a></li> <!-- Enlace a la página de eventos -->
+                <li><a href="testimonios.html">Testimonios</a></li> <!-- Enlace a la página de testimonios -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+            </ul>
+            <button class="login-button" onclick="location.href='login.html'">Iniciar Sesión</button> <!-- Botón para iniciar sesión -->
+        </nav>
+    </header>
+
+    <section> <!-- Sección de historia de la universidad -->
+        <h2>Historia de la Universidad César Vallejo</h2> <!-- Título de la sección -->
+        <p>La Universidad César Vallejo fue fundada en el año 1991 por el empresario y filántropo César Acuña Peralta. Desde entonces, se ha consolidado como una de las principales instituciones de educación superior en el Perú, con sedes en diversas ciudades del país.</p> <!-- Información sobre la fundación y consolidación de la universidad -->
+        <p>La misión de la Universidad César Vallejo es formar profesionales íntegros y líderes comprometidos con el desarrollo de su comunidad. A lo largo de los años, ha destacado por su excelencia académica y su contribución al progreso social y económico del país.</p> <!-- Misión y logros de la universidad -->
+    </section>
+    
+    <section> <!-- Sección de eventos históricos -->
+        <h2>Eventos Históricos Relevantes</h2> <!-- Título de la sección -->
+        <p>La Universidad César Vallejo ha sido parte de numerosos eventos históricos importantes en el ámbito educativo y social. Algunos de estos eventos incluyen:</p> <!-- Información sobre los eventos históricos -->
+        <ul>
+            <li>Inauguración del primer campus en Lima</li> <!-- Lista de eventos históricos -->
+            <li>Conferencias magistrales de personalidades destacadas</li>
+            <li>Participación en programas de intercambio estudiantil internacional</li>
+            <li>Organización de eventos culturales y deportivos</li>
+        </ul>
+    </section>
+
+    <footer> <!-- Pie de página -->
+        <p><a href="index.html">Regresar al Principio</a></p> <!-- Enlace para regresar al inicio -->
+        <p>Derechos de autor © 2024 Universidad César Vallejo. Todos los derechos reservados.</p> <!-- Derechos de autor -->
+    </footer>  
+</body>
+</html>
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- Declaración de tipo de documento HTML -->
+<html lang="es"> <!-- Inicio del elemento HTML con especificación de idioma -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista para dispositivos móviles -->
+    <title>CONTACTO | UCV LINKEN</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+    <script src="script.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</head>
+
+<body>
+    <header> <!-- Encabezado de la página -->
+        <div id="fecha-hora"> <!-- Contenedor para mostrar la fecha y hora -->
+            <script>
+                setInterval(mostrarFechaHora,1000) <!-- Script para mostrar fecha y hora actualizada -->
+            </script>
+        </div>
+        <h1>UCV LINKEN: CONTACTO</h1> <!-- Título principal -->
+        <img src="ucv_logo.png" alt="UCV Logo" width="100"> <!-- Imagen del logo de la universidad -->
+        <nav> <!-- Barra de navegación -->
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li> <!-- Enlace al inicio -->
+                <li><a href="historia.html">Historia</a></li> <!-- Enlace a la página de historia -->
+                <li><a href="programas.html">Programas Académicos</a></li> <!-- Enlace a la página de programas académicos -->
+                <li><a href="eventos.html">Eventos</a></li> <!-- Enlace a la página de eventos -->
+                <li><a href="testimonios.html">Testimonios</a></li> <!-- Enlace a la página de testimonios -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto (actual) -->
+            </ul>
+            <button class="login-button" onclick="location.href='login.html'">Iniciar Sesión</button> <!-- Botón para iniciar sesión -->
+        </nav>
+    </header>
+
+    <section> <!-- Sección de información de contacto -->
+        <h2>Información de Contacto</h2> <!-- Título de la sección -->
+        <p>Puedes contactarnos a través de los siguientes medios:</p> <!-- Texto informativo -->
+        <ul>
+            <li><strong>Teléfono:</strong> +51 123 456 789</li> <!-- Información de contacto - teléfono -->
+            <li><strong>Correo electrónico:</strong> info@universidadcesarvallejo.edu.pe</li> <!-- Información de contacto - correo electrónico -->
+            <li><strong>Dirección:</strong> Av. Los Pinos 123, Lima, Perú</li> <!-- Información de contacto - dirección -->
+        </ul>
+    </section>
+
+    <section> <!-- Sección del formulario de contacto -->
+        <h2>Formulario de Contacto</h2> <!-- Título de la sección -->
+        <form action="#" method="post"> <!-- Formulario de contacto -->
+            <label for="nombre" style="display: block">Nombre:</label> <!-- Etiqueta y campo para ingresar nombre -->
+            <input type="text" id="nombre" name="nombre" required style="display: block; margin-bottom: 20px;"> <!-- Campo de entrada para el nombre -->
+            <label for="email" style="display: block">Correo Electrónico:</label> <!-- Etiqueta y campo para ingresar correo electrónico -->
+            <input type="email" id="email" name="email" required style="display: block; margin-bottom: 20px;"> <!-- Campo de entrada para el correo electrónico -->
+            <label for="mensaje" style="display: block">Mensaje:</label> <!-- Etiqueta y campo para ingresar mensaje -->
+            <textarea id="mensaje" name="mensaje" rows="4" required style="display: block; margin-bottom: 20px;"></textarea> <!-- Campo de entrada para el mensaje -->
+            <button type="submit" style="display: block; margin-bottom: 20px;">Enviar Mensaje</button> <!-- Botón para enviar el mensaje -->
+        </form>              
+    </section>
+
+    <footer> <!-- Pie de página -->
+        <p><a href="index.html">Regresar al Principio</a></p> <!-- Enlace para regresar al inicio -->
+        <p>Derechos de autor © 2024 Universidad César Vallejo. Todos los derechos reservados.</p> <!-- Derechos de autor -->
+    </footer>
+    
+    <div style="height: 150px;"></div> <!-- Espacio en blanco -->  
+</body>
+</html>

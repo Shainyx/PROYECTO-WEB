@@ -1,0 +1,236 @@
+/* Importa la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Establece la fuente predeterminada */
+}
+
+/* Estilos del cuerpo del documento */
+body {
+    background-color: #c9d6ff; /* Color de fondo */
+    background: linear-gradient(to right, #7a7979, #6a6a6d); /* Degradado de fondo */
+    display: flex; /* Mostrar elementos como flexibles */
+    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: center; /* Alinear elementos horizontalmente */
+    flex-direction: column; /* Dirección de los elementos flexibles */
+    height: 100vh; /* Altura del cuerpo del documento igual al 100% del viewport */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff; /* Color de fondo */
+    border-radius: 30px; /* Radio de borde */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+    position: relative; /* Posición relativa */
+    overflow: hidden; /* Oculta el desbordamiento */
+    width: 768px; /* Ancho del contenedor */
+    max-width: 100%; /* Ancho máximo */
+    min-height: 480px; /* Altura mínima */
+}
+
+/* Estilos para los párrafos */
+.container p {
+    font-size: 14px; /* Tamaño de la fuente */
+    line-height: 20px; /* Altura de línea */
+    letter-spacing: 0.3px; /* Espaciado entre letras */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Estilos para las etiquetas span */
+.container span {
+    font-size: 12px; /* Tamaño de la fuente */
+}
+
+/* Estilos para los enlaces */
+.container a {
+    color: #333; /* Color del texto */
+    font-size: 13px; /* Tamaño de la fuente */
+    text-decoration: none; /* Sin decoración de texto */
+    margin: 15px 0 10px; /* Margen superior */
+}
+
+/* Estilos para los botones */
+.container button {
+    background-color: #2d96a8; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    font-size: 12px; /* Tamaño de la fuente */
+    padding: 10px 45px; /* Relleno */
+    border: 1px solid transparent; /* Borde transparente */
+    border-radius: 8px; /* Radio de borde */
+    font-weight: 600; /* Grosor de la fuente */
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Transformar texto a mayúsculas */
+    margin-top: 10px; /* Margen superior */
+    cursor: pointer; /* Cursor de ratón */
+}
+
+/* Estilos para botones ocultos */
+.container button.hidden {
+    background-color: transparent; /* Color de fondo transparente */
+    border-color: #fff; /* Color del borde */
+}
+
+/* Estilos para los formularios */
+.container form {
+    background-color: #fcf9f9; /* Color de fondo */
+    display: flex; /* Mostrar elementos como flexibles */
+    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: center; /* Alinear elementos horizontalmente */
+    flex-direction: column; /* Dirección de los elementos flexibles */
+    padding: 0 40px; /* Relleno horizontal */
+    height: 100%; /* Altura del formulario */
+}
+
+/* Estilos para los campos de entrada */
+.container input {
+    background-color: #eee; /* Color de fondo */
+    border: none; /* Sin borde */
+    margin: 8px 0; /* Margen superior e inferior */
+    padding: 10px 15px; /* Relleno */
+    font-size: 13px; /* Tamaño de la fuente */
+    border-radius: 8px; /* Radio de borde */
+    width: 100%; /* Ancho del campo de entrada */
+    outline: none; /* Sin contorno */
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    position: absolute; /* Posición absoluta */
+    top: 0; /* Superior */
+    height: 100%; /* Altura */
+    transition: all 0.6s ease-in-out; /* Transición suave */
+}
+
+/* Estilos para el panel de inicio de sesión */
+.sign-in {
+    left: 0; /* Izquierda */
+    width: 50%; /* Ancho */
+    z-index: 2; /* Índice Z */
+}
+
+/* Estilos para el panel activo de inicio de sesión */
+.container.active .sign-in {
+    transform: translateX(100%); /* Mover hacia la derecha */
+}
+
+/* Estilos para el panel de registro */
+.sign-up {
+    left: 0; /* Izquierda */
+    width: 50%; /* Ancho */
+    opacity: 0; /* Opacidad */
+    z-index: 1; /* Índice Z */
+}
+
+/* Estilos para el panel activo de registro */
+.container.active .sign-up {
+    transform: translateX(100%); /* Mover hacia la derecha */
+    opacity: 1; /* Opacidad */
+    z-index: 5; /* Índice Z */
+    animation: move 0.6s; /* Animación */
+}
+
+/* Animación para el cambio de paneles */
+@keyframes move {
+    0%, 49.99% {
+        opacity: 0; /* Opacidad */
+        z-index: 1; /* Índice Z */
+    }
+    50%, 100% {
+        opacity: 1; /* Opacidad */
+        z-index: 5; /* Índice Z */
+    }
+}
+
+/* Estilos para los iconos sociales */
+.social-icons {
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.social-icons a {
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 20%; /* Radio de borde */
+    display: inline-flex; /* Mostrar como flexibles */
+    justify-content: center; /* Alinear elementos horizontalmente */
+    align-items: center; /* Alinear elementos verticalmente */
+    margin: 0 3px; /* Margen */
+    width: 40px; /* Ancho */
+    height: 40px; /* Altura */
+}
+
+/* Contenedor del interruptor */
+.toggle-container {
+    position: absolute; /* Posición absoluta */
+    top: 0; /* Superior */
+    left: 50%; /* Izquierda */
+    width: 50%; /* Ancho */
+    height: 100%; /* Altura */
+    overflow: hidden; /* Oculta el desbordamiento */
+    transition: all 0.6s ease-in-out; /* Transición suave */
+    border-radius: 150px 0 0 100px; /* Radio de borde */
+    z-index: 1000; /* Índice Z */
+}
+
+/* Contenedor activo del interruptor */
+.container.active .toggle-container {
+    transform: translateX(-100%); /* Mover hacia la izquierda */
+    border-radius: 0 150px 100px 0; /* Radio de borde */
+}
+
+/* Estilos para el interruptor */
+.toggle {
+    background-color: #512da8; /* Color de fondo */
+    height: 100%; /* Altura */
+    background: linear-gradient(to right, #5c6bc0, #2d96a8); /* Degradado de fondo */
+    color: #fff; /* Color del texto */
+    position: relative; /* Posición relativa */
+    left: -100%; /* Izquierda */
+    width: 200%; /* Ancho */
+    transform: translateX(0); /* Transformar */
+    transition: all 0.6ss ease-in-out; /* Transición suave */
+}
+
+/* Contenedor activo del interruptor */
+.container.active .toggle {
+    transform: translateX(50%); /* Mover hacia la derecha */
+}
+
+/* Panel de interruptor */
+.toggle-panel {
+    position: absolute; /* Posición absoluta */
+    width: 50%; /* Ancho */
+    height: 100%; /* Altura */
+    display: flex; /* Mostrar como flexibles */
+    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: center; /* Alinear elementos horizontalmente */
+    flex-direction: column; /* Dirección de los elementos flexibles */
+    padding: 0 30px; /* Relleno horizontal */
+    text-align: center; /* Alineación del texto */
+    top: 0; /* Superior */
+    transform: translateX(0); /* Transformar */
+    transition: all 0.6s ease-in-out; /* Transición suave */
+}
+
+/* Panel izquierdo del interruptor */
+.toggle-left {
+    transform: translateX(-200%); /* Mover hacia la izquierda */
+}
+
+/* Contenedor activo del panel izquierdo del interruptor */
+.container.active .toggle-left {
+    transform: translateX(0); /* Mover hacia la derecha */
+}
+
+/* Panel derecho del interruptor */
+.toggle-right {
+    right: 0; /* Derecha */
+    transform: translateX(0); /* Transformar */
+}
+
+/* Contenedor activo del panel derecho del interruptor */
+.container.active .toggle-right {
+    transform: translateX(200%); /* Mover hacia la derecha */
+}

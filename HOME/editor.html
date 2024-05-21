@@ -1,0 +1,135 @@
+<!-- <!DOCTYPE html> Enlace al inicio -->
+<!-- <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor-Notice</title>
+</head>
+
+<body>
+    <h1>EDITOR DE NOTICIAS</h1>
+    <form action="">
+        <label for="">TITULO</label><br>
+        <input type="text" placeholder="Escribe algo"><br>
+        <label for="">AUTOR</label><br>
+        <input type="text" placeholder="Escribe algo"><br>
+        <label for="">INSERTAR UNA IMAGEN</label>
+        
+    </form>
+
+
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Noticiero</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px; /* Aumenta el tamaño del contenedor */
+            margin: 50px auto;
+            padding: 30px; /* Agrega espacio interior al contenedor */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: calc(100% - 20px); /* Deja espacio interior para que no choque con el contenedor */
+            padding: 10px;
+            margin: 0 auto; /* Centra los campos dentro del contenedor */
+            display: block; /* Hace que el campo ocupe todo el ancho disponible */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="file"] {
+            padding: 3px;
+        }
+        #preview {
+            display: none;
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario para Insertar Noticia</h1>
+        <form action="procesar_noticia.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="titulo">Insertar Título</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </div>
+            <div class="form-group">
+                <label for="autor">Insertar Autor</label>
+                <input type="text" id="autor" name="autor" required>
+            </div>
+            <div class="form-group">
+                <label for="imagen">Insertar Imagen</label>
+                <input type="file" id="imagen" name="imagen" required onchange="previewImage(event)">
+                <img id="preview" src="#" alt="Previsualización de la imagen">
+            </div>
+            <div class="form-group">
+                <label for="redaccion">Insertar Redacción para el Noticiero</label>
+                <textarea id="redaccion" name="redaccion" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar Noticia</button>
+        </form>
+    </div>
+
+    <script>
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function(){
+                var output = document.getElementById('preview');
+                output.src = reader.result;
+                output.style.display = 'block';
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+</body>
+</html>
+
+
+
+

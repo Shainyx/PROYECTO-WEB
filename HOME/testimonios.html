@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="es"> <!-- Inicio del elemento HTML con especificación de idioma -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista para dispositivos móviles -->
+    <title>TESTIMONIOS | UCV LINKEN</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos -->
+    <script src="script.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</head>
+
+<body>
+    <header>
+        <div id="fecha-hora"> <!-- Contenedor para la fecha y hora actualizada -->
+            <script>
+                setInterval(mostrarFechaHora,1000) // Script para actualizar la fecha y hora cada segundo
+            </script>
+        </div>
+        <h1>UCV LINKEN: TESTIMONIOS</h1> <!-- Título principal de la página -->
+        <img src="ucv_logo.png" alt="UCV Logo" width="100"> <!-- Logo de la Universidad César Vallejo -->
+        <nav> <!-- Barra de navegación -->
+            <ul> <!-- Lista de elementos de navegación -->
+                <li><a href="inicio.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="historia.html">Historia</a></li> <!-- Enlace a la página de historia -->
+                <li><a href="programas.html">Programas Académicos</a></li> <!-- Enlace a la página de programas académicos -->
+                <li><a href="eventos.html">Eventos</a></li> <!-- Enlace a la página de eventos -->
+                <li><a href="testimonios.html">Testimonios</a></li> <!-- Enlace a la página de testimonios (actual) -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+            </ul>
+            <button class="login-button" onclick="location.href='login.html'">Iniciar Sesión</button> <!-- Botón para iniciar sesión -->
+        </nav>
+    </header>
+
+    <section>
+        <h2>Testimonios de Estudiantes</h2> <!-- Título de la sección de testimonios -->
+        <article>
+            <blockquote> <!-- Bloque de citas -->
+                <p>"Estudiar en la Universidad César Vallejo ha sido una experiencia enriquecedora. Los profesores son excelentes y las instalaciones son modernas y bien equipadas. Gracias a la formación que he recibido aquí, me siento preparado para enfrentar los desafíos del mercado laboral."</p> <!-- Testimonio de María Pérez -->
+                <p>- María Pérez, Estudiante de Ingeniería Industrial</p> <!-- Nombre y carrera de María Pérez -->
+            </blockquote>
+        </article>
+        <article>
+            <blockquote> <!-- Bloque de citas -->
+                <p>"Elegí la Universidad César Vallejo por su reputación académica y su compromiso con la excelencia. No me arrepiento de mi decisión. Estoy muy contento con mi experiencia aquí y recomendaría esta institución a cualquier persona que busque una educación de calidad."</p> <!-- Testimonio de Juan López -->
+                <p>- Juan López, Estudiante de Derecho</p> <!-- Nombre y carrera de Juan López -->
+            </blockquote>
+        </article>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Regresar al Principio</a></p> <!-- Enlace para regresar al inicio -->
+        <p>Derechos de autor © 2024 Universidad César Vallejo. Todos los derechos reservados.</p> <!-- Aviso de derechos de autor -->
+    </footer>
+</body>
+</html>

@@ -35,7 +35,7 @@
             $result = $pstmt->get_result();
 
             if ($result->num_rows > 0) {
-                header("location:Inicio.html");
+                header("location:../HOME/Inicio.html");
             } else {
                 echo 'ACCESO DENEGADO';
             }

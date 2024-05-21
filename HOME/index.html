@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!-- Declaración de tipo de documento HTML -->
+<html lang="es"> <!-- Inicio del elemento HTML con especificación de idioma -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista para dispositivos móviles -->
+    <title>NOTICIAS DEL DÍA | UCV LINKEN</title> <!-- Título de la página -->
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Enlace al archivo de estilos -->
+    <script src="script.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</head>
+
+<body>
+    <header>
+        <div id="fecha-hora">
+            <script>
+                setInterval(mostrarFechaHora,1000) // Script para mostrar la fecha y hora actualizada
+            </script>
+        </div>
+        <br>
+        <img src="../IMAGENES/ucv_logo.png" alt="UCV Logo" width="100"> <!-- Logo de la Universidad César Vallejo -->
+        <h1>UCV LINKEN: NOTICIAS VALLEJIANAS</h1>  <!-- Título principal -->
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="historia.html">Historia</a></li> <!-- Enlace a la página de historia -->
+                <li><a href="programas.html">Programas Académicos</a></li> <!-- Enlace a la página de programas académicos -->
+                <li><a href="eventos.html">Eventos</a></li> <!-- Enlace a la página de eventos -->
+                <li><a href="testimonios.html">Testimonios</a></li> <!-- Enlace a la página de testimonios -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+            </ul>
+            <button class="login-button" onclick="location.href='login.html'">Iniciar Sesión</button> <!-- Botón para iniciar sesión -->
+        </nav>
+    </header>
+
+    <div class="banner-image"> <!-- División para la imagen del banner -->
+        <img src="universidad.jpg" alt="Descripción de la imagen"> <!-- Imagen del banner -->
+    </div>
+
+    <main>
+        <article> <!-- Sección de últimas noticias -->
+            <h2>Últimas Noticias</h2> <!-- Título de la sección -->
+            <section> <!-- Sección individual de noticia -->
+                <h3>Conferencia sobre Innovación Tecnológica</h3> <!-- Título de la noticia -->
+                <p>El próximo martes se llevará a cabo una conferencia sobre innovación tecnológica en el campus
+                    principal de la Universidad César Vallejo. Este evento contará con la participación de destacados
+                    expertos en el campo y está abierto a todos los estudiantes y profesores.</p> <!-- Contenido de la noticia -->
+            </section>
+            <section> <!-- Sección adicional de noticias -->
+                <h3>Apertura de Nuevos Programas Académicos</h3> <!-- Título de la noticia -->
+                <p>La Universidad César Vallejo anuncia la apertura de nuevos programas académicos para el próximo
+                    semestre. Entre las nuevas carreras disponibles se encuentran Ingeniería de Software, Psicología
+                    Clínica y Comunicación Audiovisual. ¡Inscríbete ahora!</p> <!-- Contenido de la noticia -->
+            </section>
+            <section> <!-- Sección adicional de noticias -->
+                <h3>Evento Cultural: Noche de Talentos</h3> <!-- Título de la noticia -->
+                <p>No te pierdas la Noche de Talentos organizada por el centro de estudiantes de la Universidad César
+                    Vallejo. Este evento promete ser una velada llena de música, baile y actuaciones artísticas. ¡Ven y
+                    demuestra tu talento!</p> <!-- Contenido de la noticia -->
+            </section>
+        </article>
+
+        <section> <!-- Sección de información institucional -->
+            <h2>Información Institucional</h2> <!-- Título de la sección -->
+            <article> <!-- Artículo individual de información institucional -->
+                <h3>Historia de la Universidad César Vallejo</h3> <!-- Título del artículo -->
+                <p>La Universidad César Vallejo fue fundada en el año 1991 por el empresario y filántropo César Acuña
+                    Peralta. Desde entonces, se ha consolidado como una de las principales instituciones de educación
+                    superior en el Perú, con sedes en diversas ciudades del país.</p> <!-- Contenido del artículo -->
+                <p>La misión de la Universidad César Vallejo es formar profesionales íntegros y líderes comprometidos
+                    con el desarrollo de su comunidad. A lo largo de los años, ha destacado por su excelencia académica
+                    y su contribución al progreso social y económico del país.</p> <!-- Contenido adicional del artículo -->
+            </article>
+            <!-- Artículos adicionales de información institucional con contenido similar -->
+
+            <article> <!-- Artículo individual de información institucional -->
+                <h3>Programas Académicos</h3> <!-- Título del artículo -->
+                <p>La Universidad César Vallejo ofrece una amplia gama de programas académicos en áreas como ingeniería,
+                    ciencias de la salud, humanidades, ciencias sociales y empresariales. Nuestros programas están
+                    diseñados para brindar a los estudiantes una educación de calidad que los prepare para enfrentar los
+                    desafíos del mundo actual.</p> <!-- Contenido del artículo -->
+                <p>Además de las carreras de pregrado, también ofrecemos programas de posgrado, cursos de
+                    especialización y educación continua para profesionales en ejercicio.</p> <!-- Contenido adicional del artículo -->
+            </article>
+            <!-- Artículos adicionales de información institucional con contenido similar -->
+
+            <article> <!-- Artículo individual de información institucional -->
+                <h3>Eventos Destacados</h3> <!-- Título del artículo -->
+                <p>La Universidad César Vallejo organiza una amplia variedad de eventos a lo largo del año, incluyendo
+                    conferencias, seminarios, talleres, ferias de empleo y actividades culturales. Estos eventos ofrecen
+                    a nuestros estudiantes la oportunidad de ampliar sus conocimientos, desarrollar sus habilidades y
+                    establecer contactos profesionales.</p> <!-- Contenido del artículo -->
+                <p>Consulta nuestro calendario de eventos para estar al tanto de las próximas actividades.</p> <!-- Contenido adicional del artículo -->
+            </article>
+            <!-- Artículos adicionales de información institucional con contenido similar -->
+        </section>
+
+        <section> <!-- Sección de testimonios de estudiantes -->
+            <h2>Testimonios de Estudiantes</h2> <!-- Título de la sección -->
+            <article> <!-- Artículo individual de testimonio -->
+                <p>"Estudiar en la Universidad César Vallejo ha sido una experiencia enriquecedora. Los profesores son
+                    excelentes y las instalaciones son modernas y bien equipadas. Gracias a la formación que he recibido
+                    aquí, me siento preparado para enfrentar los desafíos del mercado laboral."</p> <!-- Contenido del testimonio -->
+                <p>- María Pérez, Estudiante de Ingeniería Industrial</p> <!-- Nombre del estudiante y carrera -->
+            </article>
+            <!-- Artículos adicionales de testimonios con contenido similar -->
+
+            <article> <!-- Artículo individual de testimonio -->
+                <p>"Elegí la Universidad César Vallejo por su reputación académica y su compromiso con la excelencia. No
+                    me arrepiento de mi decisión. Estoy muy contento con mi experiencia aquí y recomendaría esta
+                    institución a cualquier persona que busque una educación de calidad."</p> <!-- Contenido del testimonio -->
+                <p>- Juan López, Estudiante de Derecho</p> <!-- Nombre del estudiante y carrera -->
+            </article>
+            <!-- Artículos adicionales de testimonios con contenido similar -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Derechos de autor © 2024 Universidad César Vallejo. Todos los derechos reservados.</p> <!-- Aviso de derechos de autor -->
+    </footer>
+    
+    <div style="height: 100px;"></div> <!-- Espacio en blanco -->    
+</body>
+</html>

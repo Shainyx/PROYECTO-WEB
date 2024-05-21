@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!-- Declaración de tipo de documento HTML -->
+<html lang="es"> <!-- Inicio del elemento HTML con especificación de idioma -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista para dispositivos móviles -->
+    <title>EVENTOS | UCV LINKEN</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+    <script src="script.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</head>
+
+<body>
+    <header> <!-- Encabezado de la página -->
+        <div id="fecha-hora"> <!-- Contenedor para mostrar la fecha y hora -->
+            <script>
+                setInterval(mostrarFechaHora,1000) <!-- Script para mostrar fecha y hora actualizada -->
+            </script>
+        </div>
+        <h1>UCV LINKEN: EVENTOS</h1>  <!-- Título principal -->
+        <img src="ucv_logo.png" alt="UCV Logo" width="100"> <!-- Imagen del logo de la universidad -->
+        <nav> <!-- Barra de navegación -->
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li> <!-- Enlace al inicio -->
+                <li><a href="historia.html">Historia</a></li> <!-- Enlace a la página de historia -->
+                <li><a href="programas.html">Programas Académicos</a></li> <!-- Enlace a la página de programas académicos -->
+                <li><a href="eventos.html">Eventos</a></li> <!-- Enlace a la página de eventos (actual) -->
+                <li><a href="testimonios.html">Testimonios</a></li> <!-- Enlace a la página de testimonios -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+            </ul>
+            <button class="login-button" onclick="location.href='login.html'">Iniciar Sesión</button> <!-- Botón para iniciar sesión -->
+        </nav>
+    </header>
+
+    <section> <!-- Sección de próximos eventos -->
+        <h2>Próximos Eventos</h2> <!-- Título de la sección -->
+        <article> <!-- Primer artículo de evento -->
+            <h3>Conferencia sobre Innovación Tecnológica</h3> <!-- Título del evento -->
+            <p>Fecha: 15 de mayo de 2024</p> <!-- Fecha del evento -->
+            <p>Lugar: Campus principal de la Universidad César Vallejo</p> <!-- Lugar del evento -->
+            <p>Descripción: Esta conferencia reunirá a expertos en innovación tecnológica para discutir los últimos avances en el campo y su impacto en la sociedad.</p> <!-- Descripción del evento -->
+        </article>
+        <article> <!-- Segundo artículo de evento -->
+            <h3>Feria de Empleo</h3> <!-- Título del evento -->
+            <p>Fecha: 20 de junio de 2024</p> <!-- Fecha del evento -->
+            <p>Lugar: Campus principal de la Universidad César Vallejo</p> <!-- Lugar del evento -->
+            <p>Descripción: La feria de empleo ofrecerá a los estudiantes la oportunidad de conocer a empleadores potenciales y explorar oportunidades laborales en diversas industrias.</p> <!-- Descripción del evento -->
+        </article>
+    </section>
+
+    <footer> <!-- Pie de página -->
+        <p><a href="index.html">Regresar al Principio</a></p> <!-- Enlace para regresar al inicio -->
+        <p>Derechos de autor © 2024 Universidad César Vallejo. Todos los derechos reservados.</p> <!-- Derechos de autor -->
+    </footer>
+    
+    <div style="height: 100px;"></div> <!-- Espacio en blanco -->  
+</body>
+</html>
